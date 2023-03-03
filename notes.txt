@@ -1,0 +1,147 @@
+Arquivos para INSTALAÇÃO
+	- Firebird 2.5.9
+	- Firebird ODBC
+	- Setup Runtime Crystal Reports 9
+	- PostgreSQL 9.5.25
+	- ibExpert
+	- LogMeIn Rescue Technician (prestar suporte remoto)
+	
+	Baixa no WebLiberações
+		- EcoSetup (instala o sistema)
+		- EcoFerramentas (libera os relatorios e regras de NCM e afins)
+		- Validados Online (libera as licensas para uso do Sistema)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+INSTALAR DFeMonitor // F3 encerra a emissão
+	Caminho a instalar
+		- C:\ecosis\nfe
+
+	Executavel
+		- C:\ecosis\nfe\DFeMonitor.exe]
+		
+	Configurações
+		- Sistema de Retaguarda = Eco
+		- Nome do processo de Emissão = nome da empresa
+		- ID = 01
+		- Caminho da base = C:\ecosis\dados\ecodados.eco
+		- Ambiente = homologação
+		- Empresa = 01 
+		* É NECESSÁRIO UM CERTIFICADO DIGITAL
+		
+		Depois de clicar em proximo
+		- Caminho para o banco do DFeMonitor = C:\ecosis\dados\econfe.eco
+		
+		* SALVAR COM F3
+		
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+INSTALAR PDV
+	- Instalar com EcoNFCeSetup (é o PDV)
+	- EcoPafCentralSetup (centraliza os caixas)
+	
+	
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Para Atualizar
+	Fazer Backup
+		-> ibExpert 
+			> Conectar no banco de dados (no servidor)
+				> Services >> Backup
+
+	Baixar instalador da versão nova
+		-> http://webliberacao.ec.eco.br/
+			> Eco >> Versão mais recente
+			
+	Rodar o Atualizador (é o mesmo programa que instala o sistema nos servidores e estações)
+		-> EcoSetup (recem baixado)
+			> ** Mudar para Atualizar Servidor ou Atualizar Estação, nunca para instalar
+				> Next até terminar
+				
+	Rodar o EcoFerramentas
+		-> EcoFerramentas (recem baixado)
+			> Executar todas as funções
+			
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Criar novo acesso no Sistema - 							    904 = GER000CA
+	-> Geral
+		> Cadastros
+			> Usuario
+			
+	Dados usados: Usuário, Nome Completo, Senha
+	
+	* isso gera um acesso ao sistema, mas não aos módulos
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Liberar acesso aos módulos do sistema - 					914 = GER601RA
+	-> Geral
+		> Digitações
+			> Controle de Acesso
+
+	Dados usados: Usuario (vai receber o acesso)
+	
+	Precisa escolher quais modulos vão ser liberados
+	
+///////////////////////////////////////////////////////////////////////////////////////////////////
+	
+Configurar Autonomia - 										915 = GER607RA
+	-> Geral 
+		> Digitações
+			> Controle de Autonomia
+			
+	Dados usados: Usuário (origem e destino)
+	
+	Libera algumas excessões as regras do sistema, como conceder desconto e etc.
+	
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Cadastro de Clientes - 										203 = REC000CA
+	-> Contas a Receber
+		> Cadastros
+			> Clientes
+		
+	Em Clientes
+		-> Principal
+			- Preencher os dados: CPF, RG, Nome, IE, Endereço, Numero, Bairro, Cidade
+		-> Cobrança
+			- Preencher os dados: Endereço, Numero, Bairro, Cidade (só com Tab ele já preenche)
+			
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Cadastro de Produtos - 										401 = EST004CA
+	-> Estoques
+		> Cadastros
+			> Produtos
+
+	Em Produtos
+		-> Cadastro
+			- Descrição = Nome (ex: água)
+			- Grupo = Grupo pré cadastrado (ex: Bebidas)
+			- SubGrupo = Subgrupo pré cadastrado (ex: Importado)
+			- Marca(ex: Sferriê)
+			- Setor(ex: Produtos de Limpeza)
+			- Fabricante 
+			- Código NCM
+			- Preço de Venda
+			
+		-> Preço
+			- Carga
+			
+		-> Embalagem
+			- Embalagem (un, cx, pl, etc)
+			
+	depois de tudo só ir em Confirmar
+	
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Dar Entrada em NF
+	-> Estoques
+		> Digitações
+			> Compras/Devoluções
+				> Nota Fiscal de Entrada
+					> Digitação
+					
+
+
