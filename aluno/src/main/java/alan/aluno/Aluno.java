@@ -17,15 +17,22 @@ public class Aluno {
         String nome;
         char sexo;
         
-        System.out.println("Nome: ");
+        System.out.print("Nome: ");
         nome = sc.next();
-        System.out.println("Sexo: ");
+        System.out.print("Sexo: ");
         sexo = sc.next().charAt(0);
+        
         getNameAndSex(nome, sexo);
     }
     
     private static void getNameAndSex (String nome, char sexo) {
-        System.out.println("Aluno: " + nome);
-        System.out.println("Sexo.: " + sexo);
+        System.out.println("\nAluno: " + nome);
+        switch (sexo) {
+            case 'M', 'm' -> System.out.println("Sexo.: Masculino");
+            case 'F', 'f' -> System.out.println("Sexo.: Feminino");
+            case 'G', 'g' -> System.out.println("Sexo.: Gremista");
+            case 'L', 'l' -> System.out.println("Sexo.: Louco");
+            default -> System.out.println("Sexo.: Programador");
+        }
     }
 }
