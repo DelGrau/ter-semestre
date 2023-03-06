@@ -3,10 +3,13 @@
     <p><i>- Professor Ernanny Figueiredo</i></p>
 
 <H1>Horarios</H1>
-<p><b>SEGUNDA-FEIRA</b><br>
+<h3>SEGUNDA-FEIRA</h3>
+<p>
 - 19:10 as 20:00<br>
 - 20:00 as 20:55<br>
-<b>QUINTA-FEIRA</b><br>
+</p>
+<h3>QUINTA-FEIRA</h3>
+<p>
 - 19:10 as 20:00<br>
 - 20:00 as 20:55<br>
 - 21:05 as 21:55<br>
