@@ -1,0 +1,78 @@
+**** SQL COM FIREBIRD ****
+
+	baixar o firebird em: https://www.firebirdsql.org/en/firebird-2-5/
+	
+	*** CRIANDO UM BANCO DE DADOS ***
+	
+		- Abrir Firebird ISQL Tool
+		
+		Comandos
+			CREATE DATABASE '(caminho\nome.fdb)' USER 'SYSDBA' PASSWORD 'masterkey';
+			COMMIT;
+			
+			CREATE TABLE PESSOA {
+				id INTEGER,
+				nome VARCAHR (50),
+				datanascimento DATE,
+				idcidade INTEGER,
+				idestado INTEGER,
+				dataatualizacao TIMESTAMP
+			};
+			
+			ALTER TABLE ... (pra atualizar dados numa table)
+			
+			DROP TABLE ... (pra apagar uma table)
+			
+	*** FOREIGNER KEY ***
+	
+		ALTER TABLE "(NOME_DA_TABLE)" ADD CONSTRAINT "FK_(NOME_DA_COLUMN)" FOREIGN KEY ("(NOME_DA_COLUMN)") REFERENCES (NOME_DA_TABLE)("(NOME_DA_COLUMN)");
+		- FK = Foreigner Key, determina que informação X deve constar na TabelaY segundo a FK_Z
+		
+	*** PARA ADICIONAR DADOS A UMA TABELA ***
+	
+		INSERT INTO (TABLE)(COLUMN1, COLUMN2, COLUMN3, COLUMN4) VALUES (1, 'MATEUS', 1, 1); - EXEMPLO -
+		
+	*** PARA FAZER PESQUISA PARECIDO ***
+	
+		SELECT NOME_DA_COLUMN FROM NOME_DA_TABLE WHERE NOME_DA_COLUMN *LIKE* '%campo parecido'
+		
+			- pode-se usar OR e AND para complementar as pesquisas.
+			
+	*** BUSCAS LOGICAS
+		
+		SELECT
+		*
+		FROM NOME_DA_TABLE 
+		*WHERE*								// onde
+			(requisito-x = x				// 	(condição1 = verdadeiro,	condição1 ou condição2 devem ser verdadeiras, uma ou outra, e a condição3 deve ser verdadeira, 
+			*OR*							// 	ou							seguindo a tabela verdade, onde: v+v=v, v+f=v, f+f=f, v.v=v, v.f=f, f.f=f;
+			requisito-y = y)				// 	condição2 = verdadeiro)		ou seja, se condição1 for verdadeira e condição2 for falsa, mas condição3 for verdadeira, logo, temos verdade;
+			*AND*							// 	e
+			requisito-z = z					// 	condição3 = verdadeiro;
+			
+			
+	*** BUSCAS CONDICIONAIS
+	
+		SELECT
+			*CASE*							// caso
+				*WHEN* NOME_DA_COLUMN = X 	// 	quando nome_da_coluna = tal-coisa 	ou seja, case faz Comparações dentro da consulta
+				*THEN* 'XXX' 				// 	então 'retorna tal coisa'
+				*ELSE* 'YYY' 				// 	senão 'retorno padrão'
+			*END*							// fim
+		FROM NOME_DA_TABLE
+		
+	*** MUDAR O DISPLAY DOS DADOS DURANTE A PESQUISA
+		
+		AS - Muda o nome da Column;
+		REPLACE(NOME_DA_COLUMN, 'caractere', 'novo caractere') - muda o caractere da NOME_DA_COLUMN pelo novo caractere // podem ser feitos N REPLACE, um dentro do outro, para fazer a mudança precisa
+		|| - Concatena informações, ex: num1 || ' + ' || num2 || ' = ' || num3
+		CAST - converte de um tipo para outro
+		SUBSTRING - Limita a quantidade de casas a aparecerem numa determinada pesquisa, ex: SELECT SUBSTRING(NOME FROM 1 FOR 5) // Limitou as informações da column Nome da casa 1 até a casa 5
+		LEFT e RIGHT - informa-se a coluna e a quantidade de casas que quer que seja percorrido partindo da esquerda ou da direita;
+		
+	*** FAZENDO SUBSELECT PARA CRIAR ALIAS NA QUERY
+		
+		SELECT 								// faz um subselect e muda o nome dele para N, nesse caso.
+			N.COLUMN1,
+			N.COLUMN2
+		FROM (SELECT * FROM NOME_DA_TABLE) N;
