@@ -3,11 +3,16 @@
     <p><i>- Professor Ernanny Figueiredo</i></p>
 
 <H1>Horarios</H1>
-<p>SEGUNDA-FEIRA<br>
-- Dois primeiros horarios<br>
-QUINTA-FEIRA<br>
-- A noite toda<br></p>
+<p><b>SEGUNDA-FEIRA</b><br>
+- 19:10 as 20:00<br>
+- 20:00 as 20:55<br>
+<b>QUINTA-FEIRA</b><br>
+- 19:10 as 20:00<br>
+- 20:00 as 20:55<br>
+- 21:05 as 21:55<br>
+- 21:55 as 22:45</p>
 
+<h3>Provas</h3>
 <p>- Provas valendo 70%<br>
 - Trabalhos valendo 30%</p>
 
