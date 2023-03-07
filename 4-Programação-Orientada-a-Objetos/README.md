@@ -1,5 +1,6 @@
 # PROGRAMAÇÃO ORIENTADA A OBJETOS
-<p><i>- Professor Carlos </i><p>
+<p><i>- Professor Carlos Henrique Schroder </i>
+email: carlos.schroder@prof.unipar.br<p>
 
 <div>
     <h1>Horarios<h1>
