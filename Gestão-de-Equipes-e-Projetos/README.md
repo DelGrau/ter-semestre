@@ -15,7 +15,7 @@
 - Prova valendo 70%<br>
 - Trabalhos valendo 30%</p>
 
-<h1>CONTEUDO PROGRAMATICO</h1>
+<h1>Conteudo Programatico</h1>
 <h3>1º BIMESTRE</h3>
 <p><b>EQUIPE DE ALTA PERFORMANCE</b><br>
 - Grupos ou Equipes<br>
