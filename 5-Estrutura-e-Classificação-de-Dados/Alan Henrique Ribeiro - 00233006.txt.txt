@@ -1,0 +1,12 @@
+CASCAVEL, 07/03/2023
+
+Aluno: Alan Henrique Ribeiro
+RA:    00233006
+
+1. Busque exemplos de dados ESTRUTURADOS, SEMIESTRUTURADOS e NÃO ESTRUTURADOS
+
+- ESTRUTURADOS: Arquivos JSON, onde os dados são organizados com um padrão todas as vezes que precisam repetir uma estrutura;
+
+- SEMIESTRUTURADOS: Uma página em HTML, que organiza suas informações em Tags, mas que não deixa uma estrutura homogenea.
+
+- NÃO ESTRUTURADOS: Fotos, Vídeos, Audios...
