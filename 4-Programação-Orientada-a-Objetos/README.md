@@ -1,9 +1,9 @@
 # PROGRAMAÇÃO ORIENTADA A OBJETOS
-<p><i>- Professor Carlos Henrique Schroder </i>
+<p><i>- Professor Carlos Henrique Schroder </i><br>
 email: carlos.schroder@prof.unipar.br<p>
 
 <div>
-    <h1>Horarios<h1>
+    <h1>Horarios</h1>
     <h3>TERÇA-FEIRA</h3>
     <p>
     - 19:10 as 20:00<br>
