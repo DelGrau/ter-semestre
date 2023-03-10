@@ -24,7 +24,7 @@ public class TestaClasses {
     public void latir(){
         if(porte == 'G' || porte == 'g'){
             System.out.println("Woof, Woof!");
-        else if(porte == 'M' || porte == 'm'){
+        }else if(porte == 'M' || porte == 'm'){
             System.out.println("Ruf, Ruf!"); 
         } else {
             System.out.println("Yeet, Yeet!");

@@ -2,8 +2,6 @@
 
 package tersemestre.classesdeanimais;
 
-import tersemestre.classesdeanimais.TestaClasses;
-
 /**
  *
  * @author Alan.Henrique
@@ -13,6 +11,6 @@ public class ClassesDeAnimais {
     public static void main(String[] args) {
         TestaClasses macaco = new TestaClasses( "Ze", "Macaco", (float) 35.2, 'M', 'M');
         
-        System.out.println(macaco.getNome());
+        System.out.println(macaco.getPeso());
     }
 }
