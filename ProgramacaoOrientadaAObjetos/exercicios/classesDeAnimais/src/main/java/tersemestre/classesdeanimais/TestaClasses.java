@@ -21,6 +21,16 @@ public class TestaClasses {
         porte = port;
     } 
     
+    public void latir(){
+        if(porte == 'G' || porte == 'g'){
+            System.out.println("Woof, Woof!");
+        else if(porte == 'M' || porte == 'm'){
+            System.out.println("Ruf, Ruf!"); 
+        } else {
+            System.out.println("Yeet, Yeet!");
+        }
+    }
+    
     public String getNome(){
         return this.nome;
     }
