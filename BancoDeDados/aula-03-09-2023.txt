@@ -1,0 +1,89 @@
+CASCAVEL, 09/MARÇO/2023
+
+BANCO DE DADOS
+
+    BANCO DE DADOS: Representa um arquivo físico de dados, armazenados em dispositivos perifericos, onde estão armazenados os dados
+    de diversos sistema, para consulta e atualização pelo usuario
+
+    DADO: É o valor do campo quando é armazenado no Banco de Dados 
+
+    TABELAS LOGICAS: Representam as estruturas de armazenamentode dados (arquivos) dis sistemas
+
+    S.G.B.D: É o software responsável pelo gerenciamento do BD
+
+Propriedades Genericas
+
+    Um BD é uma coleção de dados logicamente relacionados, com algum significado.
+        - implica em que associassoes aleatórias de dados não possam ser chamadas de bases de dados.
+
+    um BD é projetado, construido e preenchido com dados para um propósito específico
+        - Possui um grupo de usuários e algumas aplicalçies concebidas para atender a esses usuarios.
+
+    um BD é a representação de algum aspecto do mundo real.
+        - nos leva a que, qualquer mudança na realidade, provocará mudanças nessa base de dados.
+
+VISÕES DO BANCO DE DADOS
+
+    Visão interna
+        - é a vista pelo responsável pela manutenção e desenvolvimento do SGBD. Existe a preocupação com a forma de recuperação e
+        manipulação dos dados dentro do Banco de Dados
+
+    Visão Externa
+        - é aquela vista pelo usuario que opera os sistemas aplicativos, através de interfaces desenvolvidas pelo analista (Programas),
+        buscando o atendimento de suas necessidades
+
+    Visão Conceitual
+        - é aquela vista pelo analista de desenvolvimento e pelo adminustrados das bases de dados. Existe a preocupação na definição de 
+        normas e procedimentos para manipulação dos dados.
+
+            - Comandos DDL: Comandos de definição dos dados, aqueles que gravam dados nas tabelas e colunas;
+            - Comandos DML: São so comandos de manipulação dos dados, aqueles que fazem as consultas dos dados;
+
+SISTEMA GERENCIADOR DE BANCO DE DADOS
+
+    É uma coleção de programas que permitem aos usuarios definirem, construirem e manipularm uma base de dados para o uso das
+    diversas aplicações.
+    
+MODELAGEM DE DADOS
+
+    MODELO DE DADOS 
+
+        - Coleção de elementos de representação com propriedades semânticas e sintaticas pré-definidas.
+
+        - Um elemento ou um conjunto de elementos de representação são agrupados e organizados para representar uma porção do "Mundo Real"
+        constintuindo um esquema de dados compreensivel pelo gerenciador.
+
+    CARDINALIDADE
+        São as permissões que um grupo de entidades tem para se relacionar com outro grupo de entidades através de um tipo 
+        de relacionamento
+
+ATIVIDADES
+
+1. O que são comandos DDL em banco de dados?
+2. O que são comandos DML em banco de dados?
+3. A respeito das propriedades de um SGBD, o que é ACID? Pesquise e detalhe os conceitos.
+4. O que é o modelo de Peter Chen? Como e onde ele é utilizado? ** importante
+5. O que é uma entidade?
+6. O que é um atributo?
+7. Explique o conceito de cardinalidade de relacionamentos.
+8. Explique a necessidade de um processo de modelagem de banco de dados.
+
+1.R: SãoComandos DDL são comandos de Definição de Dados.
+
+2.R: São comandos de Consulta de Dados no Banco.
+
+3.R: ACID é uma estrutura de banco de dados que garante seu correto funcionamento e impede que dados sejam corrompidos 
+     ou perdidos no processamento de transações. A sigla significa: Atomicidade, Consistencia, Isolamento e Durabilidade.
+     
+4.R: O modelo de Chen é o modelo Entidade-Relacionamento, MER. Esse modelo é utilizado para descrever dados e aspectos da informação 
+     de uma maneira abstrata.
+
+5.R: Entidades são Coisa, Objetos em um banco de dados. Por exemplo, uma entidade pode ser uma tabela em um banco de dados.
+
+6.R: Um atributo é uma caracteristica de uma entidade, por exemplo, uma Coluna de uma Tabela num banco de dados.
+
+7.R: São as permissões que um grupo de entidades tem para se relacionar com outro grupo de entidades através de um tipo 
+     de relacionamento.
+
+8.R: A modelagem do banco de dados serve para dar sentido a estrutura dos dados. Com ela, você prepara e estrutura as relações
+     dos dados entre si, principalmente.

@@ -71,9 +71,9 @@ EXERCÍCIOS DE FIXAÇÃO
         2. Empresas, usam banco de dados para realizar ações durante o dia-a-dia, assim como calcular transações com o sistema.
         3. Farmacias, onde armazenam os estoques de remédios, valores, clientes, entre outros.
     
-    2-R: Data de nascimento, Nome, Endereço, 
+    2-R: Data de nascimento, Nome, cidade, valor, cpf
 
-    3-R:
+    3-R: Idade, Endereço de entrega, lucro, comprador, 
 
     4-R: 
          Banco de dados nada mais é que um compilado de informações práticas unificadas em um aglomerado só.
@@ -83,4 +83,4 @@ EXERCÍCIOS DE FIXAÇÃO
          Inconsistencia, deve ser tratada para não haver perda de dados no banco.
          Integração, deve ser tratada para manter um padrão consistente entre bancos.
 
-    6-R: 
+    6-R: os dois conceitos são o SQL e o SGBD.
