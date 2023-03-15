@@ -10,7 +10,9 @@ public class ClassesDeAnimais {
 
     public static void main(String[] args) {
         TestaClasses macaco = new TestaClasses( "Ze", "Macaco", (float) 35.2, 'M', 'M');
+        TestaClasses monke = new TestaClasses( "Chimp", "Macaco", (float) 40.7, 'M', 'G');
         
         System.out.println(macaco.getPeso());
+        System.out.println(monke.getNome());
     }
 }
