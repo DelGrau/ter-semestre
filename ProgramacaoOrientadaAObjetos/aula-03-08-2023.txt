@@ -1,0 +1,16 @@
+
+Lider do Grupo deve:
+    - Criar um Chat;
+    - Organizar o Time;
+    - Organizar Reuniões;
+    - Cobrar os Deploys;
+
+Sistemas :: no minimo 1 classe pra cada membro do time, com no minimo 10 atributos e no mínimo 3 métodos cada;
+   
+    - Sistema de Aula                       - Joao Vitor (L)        - joao Contini      - Pedro         - Bruno              - Renan A  - Eduardo R
+    - Sistema de Consultorio medico         - Ricardo (L)           - Maria Nava        - Igor          - Mateuzinho         - Uelberti - Eduardo Monteiro
+    - Sistema de processo cível             - Renan (L)             - Mateus Martins    - Mateus Soares - Victor             - Fernanda - Felipe Koji
+    - Sistema de loja de bicileta           - vinicius ortiz (L)    - Wilian            - Maria Isadora - Nathan             - Erick
+    - Sistema de loja de conveniencia       - Regiane (L)           - Gustavo Nava      - Alan M        - Gustavo Nathan     - Lucas    - Maycon
+    - Sistema de bar                        - Adrian (L) - Gabriela - Felipe Talini     - Lucas Miguel  - Vinicius Sempkoski - Alan H 
+    - Sistrma controle de acesso ao estadio - Lucas Leopolski (L)   - Alexander         - Renan Z       - Ronei              - Nicolas  - 
