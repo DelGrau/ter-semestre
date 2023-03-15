@@ -50,15 +50,18 @@ public class Exemplo1 {
     }
     
     public static void arrayDeFibonacci(){
-        int[] fib = new int[21];
+        int[] fib = new int[20];
         int ant = 0, atu = 1;
-        for (int i = 0; i <= 20; i++){
+        for (int i = 0; i < 20; i++){
             fib[i] = ant+atu;
-            ant = fib[i];
+            ant = atu;
+            atu = fib[i];
         }
         System.out.println("Exercício 4:\nSequencia de Fibonacci:");
-        for (int i = 0; i <= 20; i++){
+        for (int i = 0; i < 20; i++){
             System.out.print(" "+fib[i]);
         }
     }
+    
+    
 }
