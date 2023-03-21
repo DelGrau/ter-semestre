@@ -1,0 +1,81 @@
+CASCAVEL, 20 DE MARÇO
+
+    1FN
+        - Tratar todos os atributos multivalorados e deixa-los atomicos;
+        - Cria-se uma Chave Primaria (PK);
+        
+    2FN
+        - Separar as etidades com Mais de 1 Chave Primaria;
+    
+    3FN
+        - Tirar das estruturas os campos que são funcionalmente dependentes uns dos outros;
+
+    1FN
+        VENDEDOR
+            NUM VENDEDOR PK
+            NOME VENDEDOR 
+            END VENDEDOR 
+            TELEFONE 
+            COD POSTAL
+            CIDADE
+
+        PRODUTO
+            NUM PRODUTO PK
+            DESCRICAO PRODUTO 
+            ESTOQUE
+            PRECO UNITARIO 
+
+        FATURA
+            NUM FATURA PK
+            QUANTIDADE VENDIDA 
+            TOTAL 
+
+    2FN
+        VENDEDOR
+            NUM VENDEDOR PK
+            NOME VENDEDOR 
+            END VENDEDOR 
+            TELEFONE 
+            COD POSTAL
+            CIDADE
+
+        PRODUTO
+            NUM PRODUTO PK
+            DESCRICAO PRODUTO 
+            ESTOQUE
+            PRECO UNITARIO 
+
+        FATURA
+            NUM FATURA PK
+            QUANTIDADE VENDIDA 
+            TOTAL 
+            NUM PRODUTO FK
+
+    3FN
+        VENDEDOR
+            NUM VENDEDOR PK
+            NOME VENDEDOR 
+        
+        DADOS_VENDEDOR
+            NUM VENDEDOR PK
+            END VENDEDOR 
+            TELEFONE 
+            COD POSTAL
+            CIDADE
+
+        PRODUTO_DADOS
+            NUM PRODUTO PK
+            DESCRICAO PRODUTO 
+            ESTOQUE
+            PRECO UNITARIO 
+
+        FATURA
+            NUM FATURA PK
+            NUM PRODUTO FK
+            NUM VENDEDOR FK
+
+        FATURA_DADOS
+            NUM FATURA
+            QUANTIDADE VENDIDA 
+            TOTAL 
+            

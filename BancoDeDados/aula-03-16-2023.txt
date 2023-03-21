@@ -1,0 +1,81 @@
+Montar um deseho de um MER
+    - Empregados e Projetos
+        - Numero do Empregados
+        - nome do Empregados
+        - numero do depto
+        - nome do depto
+        - numero do gerente
+        - nome do gerente
+        - numero do Projetos
+        - nome do Projetos
+        - data de inicio
+        - numero de horas trabalhadas
+
+BOYCE-CODD
+5FN
+6FN
+
+TABELA DE NOTAS FISCAIS - Fazer 1FN, 2FN e 3FN
+    1FN
+        Num NF
+        Série
+        Data Emissão
+        Cod. Cliente
+        Nome Cliente
+        Endereço Cliente 
+        CGC_cliente (cpf)
+        Código Mercadoria
+        Descrição Mercadoria 
+        Quantidade vendida
+        Preço de venda 
+        Total da venda da Mercadoria 
+        Total geral da Nota
+
+    2FN
+        NotaFiscal
+            Num_NF (PK)
+            Série
+            Data_Emissão
+            Cod_Cliente
+            Nome_Cliente
+            Endereço_Cliente 
+            CGC_cliente (cpf)
+            Total_Geral_Nota
+            Codigo_Mercadoria (FK)
+
+        Produto
+            Código Mercadoria (PK)
+            Descrição_Mercadoria 
+            Quantidade_Vendida
+            Preço_Venda 
+            Total_Venda_Mercadoria 
+            Num_NF (FK)
+
+    3FN
+        Nota_Fiscal
+            Num_NF (PK)
+            Série
+            Data_Emissão
+            Total_Geral_Nota
+            Cod_Cliente (FK)
+            Codigo_Mercadoria (FK)
+        
+        Cliente
+            Cod_Cliente (PK)
+            Nome_Cliente
+            Endereço_Cliente 
+            CGC_cliente (cpf)
+            Num_NF (FK)
+
+        Produto
+            Código Mercadoria (PK)
+            Descrição_Mercadoria 
+            Quantidade_Vendida
+            Preço_Venda 
+            Total_Venda_Mercadoria 
+            Num_NF (FK)
+
+        Venda
+            Num_NF (PK)
+            Codigo_Mercadoria (FK)
+            Codigo_Cliente (FK)
