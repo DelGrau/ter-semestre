@@ -1,0 +1,31 @@
+GESTÃO DE EQUIPES E PROJETOS
+
+    O que é um projeto?
+
+        Um projeto é um esforço temporario para criar um produto / serviço exclusivo.
+
+        É Temporario e Único
+        Possui Inicio, Meio e Fim definidos
+        Possui Objetivo claro
+        Tem elaboração progressiva
+        Possui limitação de recursos
+
+    Componentes de um Projeto 
+
+        Pessoas
+        Processo 
+        Tecnologia
+
+    Projeto X Subprojetos
+
+        Projeto é o todo, dentro do Projeto existem vários subprojetos menores que compõem o todo.
+
+    Projeto X Programa 
+
+        Um programa é um compilado de projetos, desenvolvidos para servir ao aobjetivo do Programa
+
+    Gerente de Projetos
+
+        Gerencia o progresso do empreendimento e verifica os desvios, recursos, escopo, mudanças a fim de entregar...
+
+        

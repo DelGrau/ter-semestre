@@ -1,0 +1,20 @@
+REALIZAR UMA ANALISE DAS NORMAS E PADRÕES DE PROJETOS;
+
+EXPLICAÇÃO, CARACTERISTICAS, CONSIDERAÇÕES DO GRUPO SOBRE OS PADRÕES
+
+ENTREGAS VIA EMAIL ATÉ AS 22:45;
+
+    PMBOK - PMI (alan)
+        O PMBOK é a principal publicação do PMI e um recurso fundamental para o gerenciamento eficaz de projetos em qualquer setor.
+        Ele é um Guia de Melhores Práticas na questão de gerenciamento de projetos, ou seja, ele padroniza as técnicas, ferramentas,
+        baseado em Princípios e Domínios de Desempenho.
+
+    ISO 21500:2012 (adrian)
+
+    PRINCE2 (alan)
+        O Prince2, ou PRojects IN Controlled Enviroments é voltado para o gerenciamento de Projetos. Essa metodologia é amplamente
+        utilizada pelo Setor Público e Privado do Reino Unido. 
+
+    IPMA (maicon)
+
+    SCRUM (talini)
